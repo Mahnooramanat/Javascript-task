@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript Task</title>
+    <!-- <scrpit src="app.js"></scrpit> -->
+</head>
+<body>
+    <h1>Name:Mahnoor</h1>
+    <h2>Batch:10</h2>
+    <h2>Roll No:WMA-132140</h2>
+    <!-- <scrpit src="./app.js"></scrpit> -->
+    <script>
+    //   QUESTION 1
+    // let nums=[2,3,-2,4]
+    // console.log(nums);
+    // let array1=[2,3]
+    // let array2=[-2,4]
+     // console.log(nums[0]*nums[1]);
+    // console.log(nums[1]*nums[0]);
+    // console.log(a*b);
+    let a=prompt("Enter Your First Number");
+    let b=prompt("Enter Your Second Number");
+    alert(a*b);
+    // question no 03
+    function reverse(string){
+let reversed="";
+while (reversed.length!==string.length) {
+    reversed=string[reversed.length]+reversed;
+    
+}
+return reversed;
+    }
+    alert(reverse(prompt('Enter String')));
+//     Question # 02: Given an array of integers nums and an integer target, return indices of
+// the two numbers such that they add up to target.
+// You may assume that each input would have exactly one solution, and you may not use the
+// same element twice
+// let arr=[];
+// let target=[];
+// prompt=("enter number");
+// prompt=("enter number");
+// if(arr[0]<arr[1]){
+// console.log(arr[0]+arr[1]);}
+// // else{
+// //     console.log("not a number");
+// // }
+let c=prompt("Enter number");
+    let d=prompt("Enter number");
+    alert(a+b);
+// Question # 04: Write a JavaScript program to display the reading status (i.e. display
+// book name, author name and reading status) of the following books.
+let library=[
+    {
+        author:'Bill Gates',
+        title:'The Road Ahead',
+        readingStatus:"true",
+
+    },
+    {
+        author:'Steve JObs',
+        title:'The Road Accident',
+        readingStatus:"true",
+
+    },
+    {
+        author:'Anonymous',
+        title:'The Crazy GIrl',
+        readingStatus:"false",
+
+    },
+]
+console.log(library[0]);
+console.log(library[1]);
+console.log(library[2]);
+let readingStatus=library.forEach(element=>{
+    if(element.readingStatus==="true"){
+        console.log("Book was read");
+    }else{
+        console.log("Book was not read");
+    }
+});
+
+
+
+// Question # 05:
+// Write a JavaScript function to convert an amount into coins.
+// Sample function : amountTocoins(46, [25, 10, 5, 2, 1])
+// Here 46 is the amount. and 25, 10, 5, 2, 1 are coins.
+// Output : 25, 10, 10, 1
+// You can return the answer in any order.
+function amountToCoins(amount, coins) {
+    let result = [];
+    for (let coin of coins) {
+        while (amount >= coin) {
+            result.push(coin);
+            amount -= coin;
+        }
+    }
+    return result;
+}
+
+console.log(amountToCoins(46, [25, 10, 5, 2, 1])); // Output: [25, 10, 10, 1]
+
+
+
+
+
+    </script>
+</body>
+</html>
